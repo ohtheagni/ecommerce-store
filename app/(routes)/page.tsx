@@ -3,7 +3,7 @@ import React from 'react'
 
 import getBillboard from '@/actions/get-billboard';
 import getProducts from '@/actions/get-products';
-import Billboard from '@/components/billboard';
+import Billboard from '@/components/ui/billboard';
 import Container from '@/components/ui/container'
 import ProductList from '@/components/product-list';
 
@@ -13,7 +13,8 @@ export const revalidate = 0;
 const HomePage = async () => {
 
   const products = await getProducts({ isFeatured: true });
-  const billboard = await getBillboard('4eb46154-3ada-4a40-b442-9d01172aaddc');
+  // data taken from copying billboard id
+  const billboard = await getBillboard('eba7f61b-c4de-473c-980b-a7d50bc29299');
 
 
 
