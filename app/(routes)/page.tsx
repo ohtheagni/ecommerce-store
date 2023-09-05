@@ -14,7 +14,7 @@ const HomePage = async () => {
 
   const products = await getProducts({ isFeatured: true });
   // data taken from copying billboard id
-  const billboard = await getBillboard('eba7f61b-c4de-473c-980b-a7d50bc29299');
+  const billboard = await getBillboard('77cfce9c-0d9c-4657-82e4-d432200e87b3');
 
 
 
